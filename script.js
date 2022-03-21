@@ -27,7 +27,7 @@ $(document).ready(function() {
     letters = reverseLetters(letters);
     const middleLetter = getMiddleLetter(sentence);
 
-    return middleLetter + sentence + letters;
+    return (middleLetter + sentence + letters).split('').reverse().join('');
   }
 
   const encodedSentence = encode(sentence);
